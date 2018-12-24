@@ -1,0 +1,36 @@
+.heading{font-size: 30px;
+    }
+
+body{text-align: center;}
+div {
+    margin-top: 10px;
+    display:inline-block;
+
+}
+
+
+
+th{text-align: center}
+
+td input {
+    width: 70px;
+    border-radius:10px;
+}
+
+td{
+
+    padding
+}
+
+.c1{width:120px}
+.c2{width:100}
+.c3{}
+
+#total{width: 170;
+    height:50;
+
+}
+
+.total{font-weight:400;
+    font-size: 30px;
+    font-style: bold;}

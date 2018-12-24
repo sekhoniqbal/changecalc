@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" sizes="512x512" href="./images/icons/icon-512x512.png">
+        <title>Change Calculator</title>
+  </head>
+    <body>
+        <span class="heading">Change Calculator</span><br/>
+        <div>
+        <table>
+            <tr>
+                <th>Denomination</th>
+                <th>Count</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td class="c1">
+                     <b>5</b> cent Coin
+                </td>
+                <td class="c2">
+                    <input min=0 type="number" id="fivecent">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="fivecentr">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     <b><b>1</b>0</b> cent Coin
+                </td>
+                <td class="c2">
+                    <input min=0 type="number" id="tencent" onchange=tencent(this.value)>
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="tencentr">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     <b>25</b> cent Coin
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="twentyfivecent">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="twentyfivecentr">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     $<b>1</b> Coin
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="one">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="oner">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     $<b>2</b>  Coin
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="two">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="twor">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     $<b>5</b> Note
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="five">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="fiver">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="c3">
+                     $<b>10</b> Note
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="ten">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="tenr">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     $<b>20</b> Note
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="twenty">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="twentyr">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     $<b>50</b> Note
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="fifty">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="fiftyr">
+                </td>
+            </tr>
+            <tr>
+                <td class="c3">
+                     $<b>100</b> Note
+                </td>
+                <td class="c3">
+                    <input min=0 type="number" id="hundred">
+                </td>
+                <td class="c3">
+                    <input disabled type="number" id="hundredr">
+                </td>
+            </tr>
+             <tr>
+                <td class="c3">
+
+                </td>
+                <td class="c3">
+
+                </td>
+            </tr>
+
+        </table>
+        <table>
+            <tr>
+                <td class="c1 total" >
+                    Total
+                </td>
+                <td class="c3">
+                        <input disabled type="number" class="total" id="total">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
